@@ -14,7 +14,7 @@ function init() {
     if (!config_1.mernshellConfig.devMode) {
         (0, cli_welcome_1.default)({
             title: "MernShellGenerator",
-            tagLine: "by Dustin Hurtt",
+            tagLine: "by Ironhack",
             description: Package_1.Package.description,
             bgColor: "#2DC5FA",
             color: "#000000",

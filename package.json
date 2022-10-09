@@ -1,16 +1,20 @@
 {
-  "name": "mern-shell",
+  "name": "mern-shell-test1",
   "version": "0.1.0",
   "main": "index.js",
   "repository": "git@github.com:DustinHurtt/MERNshell.git",
   "author": "Dustin Hurtt",
   "license": "MIT",
   "description": "Generator for creating MERN Stack project shell.",
+  "publishConfig": {
+    "access": "public"
+  },
   "scripts": {
     "dev": "DEV=true nodemon  ",
     "build": "rimraf dist && tsc",
     "start": "DEV=true esr src/index.ts --auth --skip-install --pnpm",
-    "build:watch": "tsc --watch"
+    "build:watch": "tsc --watch",
+    "prepublishOnly": "npm run build"
   },
   "bin": {
     "mernshell": "index.js"

@@ -5,7 +5,7 @@ var __importDefault = (this && this.__importDefault) || function (mod) {
 Object.defineProperty(exports, "__esModule", { value: true });
 exports.helpText = exports.FLAGS = void 0;
 const cli_meow_help_1 = __importDefault(require("cli-meow-help"));
-exports.FLAGS = ["json", "auth", "fs"];
+exports.FLAGS = ["json", "auth", "fs", "pnpm"];
 const flags = {
     json: {
         type: "boolean",
@@ -20,6 +20,11 @@ const flags = {
         type: "boolean",
         default: false,
         desc: "Creates an opinionated express and create-react-app setup",
+    },
+    pnpm: {
+        type: "boolean",
+        default: false,
+        desc: "Installs dependencies through pnpm, assuming you have it installed",
     },
 };
 const commands = {
